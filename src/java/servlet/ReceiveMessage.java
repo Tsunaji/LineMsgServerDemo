@@ -8,6 +8,7 @@ package servlet;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.security.NoSuchAlgorithmException;
 import java.util.logging.Level;
@@ -56,7 +57,7 @@ public class ReceiveMessage extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
 
         System.out.println("TEST HEROKU");
-        
+
 //        // 署名検証
 //        String body = null;
 //        try (Stream<String> stream = request.getReader().lines()) {
@@ -114,6 +115,18 @@ public class ReceiveMessage extends HttpServlet {
 //        } catch (final IOException e) {
 //        }
 //        response.setStatus(200);
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet NewServlet</title>");
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet NewServlet at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
+        }
 
     }
 
