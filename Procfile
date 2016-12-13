@@ -1,1 +1,1 @@
-web:    java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/sheralinemsgdemo.war
+web:    java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT dist/LineMsgServerDemo.war
