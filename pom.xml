@@ -19,16 +19,12 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 </dependency>
 </dependencies>
 <build>
-<finalName>sheralinemsgdem</finalName>
+<finalName>sheralinemsgdemo</finalName>
 <plugins>
 <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-dependency-plugin</artifactId>
-			<configuration>
-				<failOnMissingWebXml>false</failOnMissingWebXml>
-				<webXml>src\main\webapp\WEB-INF\web.xml</webXml>  
-			</configuration>
-            <version>3.2</version>
+            <version>3.0.1</version>
             <executions>
                 <execution>
                     <phase>package</phase>
@@ -36,10 +32,10 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
                     <configuration>
                         <artifactItems>
                             <artifactItem>
-                         <groupId>com.github.jsimone</groupId>
-                        <artifactId>webapp-runner</artifactId>
+                                <groupId>com.github.jsimone</groupId>
+                                <artifactId>webapp-runner</artifactId>
                                 <version>8.0.30.2</version>
-                     <destFileName>webapp-runner.jar</destFileName>
+                                <destFileName>webapp-runner.jar</destFileName>
                             </artifactItem>
                         </artifactItems>
                     </configuration>
