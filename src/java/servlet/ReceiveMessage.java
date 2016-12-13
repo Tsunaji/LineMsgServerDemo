@@ -35,7 +35,7 @@ import org.codehaus.jackson.map.ObjectMapper;
  *
  * @author jirasak_ka
  */
-@WebServlet(name = "RecieveMessage", urlPatterns = {"/RecieveMessage"})
+@WebServlet(name = "ReceiveMessage", urlPatterns = {"/ReceiveMessage"})
 public class ReceiveMessage extends HttpServlet {
 
     private static final String CHANNEL_SECRET = "31cc9976980b2005816a49147d8a84c7";
