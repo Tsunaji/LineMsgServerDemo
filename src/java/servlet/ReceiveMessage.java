@@ -36,7 +36,7 @@ import org.codehaus.jackson.map.ObjectMapper;
  * @author jirasak_ka
  */
 @WebServlet(name = "RecieveMessage", urlPatterns = {"/RecieveMessage"})
-public class RecieveMessage extends HttpServlet {
+public class ReceiveMessage extends HttpServlet {
 
     private static final String CHANNEL_SECRET = "31cc9976980b2005816a49147d8a84c7";
     private static final String CHANNEL_ACCESS_TOKEN = "2SqwVhx4/ZmAqzL+ojMgLnwXf9RHgwCyTCaTiJBgKoPtxE5/O6QXNCJKlkeeyAmGDmdEUeKI51FDQ5mhd/T5iOiRA39zgHcZolgJcOt07PcAwVofZrokUxMcgaMMHPLdm73mYGMLbBNmqxaQTMvRBwdB04t89/1O/w1cDnyilFU=";
@@ -130,7 +130,7 @@ public class RecieveMessage extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (java.security.InvalidKeyException ex) {
-            Logger.getLogger(RecieveMessage.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ReceiveMessage.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -148,7 +148,7 @@ public class RecieveMessage extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (java.security.InvalidKeyException ex) {
-            Logger.getLogger(RecieveMessage.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ReceiveMessage.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
